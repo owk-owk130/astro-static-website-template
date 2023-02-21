@@ -1,15 +1,22 @@
 {
-	"name": "",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.0.14"
-	}
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prettier": "pnpm prettier:ts && pnpm prettier:astro",
+    "prettier:ts": "prettier --check 'src/**/*.ts'",
+    "prettier:astro": "prettier --check 'src/**/*.astro'"
+  },
+  "dependencies": {
+    "astro": "^2.0.14",
+    "eslint": "^8.34.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0"
+  }
 }
