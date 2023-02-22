@@ -1,0 +1,4 @@
+$viewport: 750;
+@function p2v($px) {
+  @return calc($px / $viewport) * 100vw;
+}
